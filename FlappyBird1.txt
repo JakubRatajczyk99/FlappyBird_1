@@ -1,0 +1,38 @@
+1.
+Create Empty(sufit)
+Dodanie do niego parametrów base(podłogi)
+Błąd: 
+Sufit wraca w miejsce base(podłogi)
+-->
+Klonowanie Animations i zmiana parametrów, które powodują problem
+Sufit spada z góry. 
+Parametry zmienione w początkowej fazie, w późniejszej wracały do tej, która ma
+podłoga, dlatego zmiana ostatniej fazy na prawidłową
+
+
+2. 
+Sklonowanie prefabu od pipe'a i zmiana kolorów ich na takie, żeby każda była inna(4 możliwości)
+
+Modyfikacja kodu PipeSpawner.cs
+Dodanie tablicy prefabów w funkcji
+Wywołanie metody GetRandom i utworzenie logiki między grą, a skryptem.
+
+
+3.
+Dodanie Coina z assetstore do naszego projektu
+Zrobienie z niego prefabu
+Utworzenie kodu dla Coina i dla SpawnerCoina
+Problem: Coin nie znika po kontakcie z nim mimo wywołania metody OnCollisionEnter2D
+Kontakt z Coinem wywoływał GameOver. -> Zmiana OnCollisionEnter2D w PlayerController.cs
+..
+..
+
+Coin nie zawierał skryptu, który wywoływał kolizję z Playerem, dodanie OnTriggerEnter2D
+i dodanie do skryptu nowej funkcjonalności w postaci dodawanych punktów za każdego zebranego coina
+
+4. 
+Wybieram 3 obrazki czerwonego ptaka, robię z niego prefab i robię na nowo animajcę
+analogiczna do tego niebieskiego
+Zmieniam w inspektorze na czerwonego.
+
+
