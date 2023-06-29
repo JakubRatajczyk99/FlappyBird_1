@@ -36,4 +36,10 @@ public class GameManager : Singleton<GameManager>
         points++;
         scoreText.text = points.ToString();
     }
+
+    public void IncreaseScore() // Dodana metoda IncreaseScore()
+    {
+        points++;
+        scoreText.text = points.ToString();
+    }
 }

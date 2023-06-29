@@ -24,8 +24,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D col)
+    private void OnCollisionEnter2D(Collision2D coll)
     {
-        GameManager.Instance.OnGameOver();
+        if (coll.gameObject.CompareTag("Pipes") || coll.gameObject.CompareTag("Sciana"))
+        {
+            GameManager.Instance.OnGameOver();
+
+        }
+   
+
     }
+
 }
